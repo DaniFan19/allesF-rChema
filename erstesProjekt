@@ -1,0 +1,25 @@
+public class Main {
+
+	public static void main(String[] args)  {
+		
+//		String path = "C:/Users/D.M.2/Desktop/Gesundheitsdaten.txt";
+		String path2 = "C:/Users/D.M.2/Desktop/IKG/1. Semester/Prog1/11. Woche/Berlin.csv";
+		PatientList patList = new PatientList();
+		
+		patList.addFromCSVFile(path2);	
+		
+		Loesung.monthlyInfections(patList, 2020, 2021, 1, 12);	
+		
+		
+//		try {
+//			int i = Integer.parseInt("b");	// Fehler: b kann nicht zu einem Integer geparst werden 
+//			System.out.println(1+i);
+//		}
+//		catch(Exception e){
+//			System.out.println( "b ist keine Zahl");		
+//			
+//			System.out.println("Trotz Fehler (NumberFromatException) geht es einfach weiter :) ");
+//			}	
+//		
+	}
+}
